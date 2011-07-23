@@ -1,0 +1,16 @@
+<style type="text/css">@import url("style.css");</style>
+
+
+    <img src="http://chart.apis.google.com/chart?chd=e:helloworld&amp;chs=250x100&amp;cht=p" />
+    <pre><div class="highlight"><pre><span class="kn">from</span> <span class="nn">GChartWrapper</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="c"># Instantiate the GChart instance, this is all you will need for making charts</span>
+<span class="c"># GChart(type=None, dataset=None), see the doc for more</span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">GChart</span><span class="p">()</span>
+<span class="c"># Set the chart type, either Google API type or regular name</span>
+<span class="n">G</span><span class="o">.</span><span class="n">type</span><span class="p">(</span><span class="s">&#39;pie&#39;</span><span class="p">)</span>
+<span class="c"># Update the chart&#39;s dataset, can be two dimensional or contain string data</span>
+<span class="n">G</span><span class="o">.</span><span class="n">dataset</span><span class="p">(</span> <span class="s">&#39;helloworld&#39;</span> <span class="p">)</span>
+<span class="c"># Set the size of the chart, default is 300x150</span>
+<span class="n">G</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mf">250</span><span class="p">,</span><span class="mf">100</span><span class="p">)</span>
+</pre></div>
+</pre>

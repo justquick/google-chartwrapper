@@ -1,0 +1,12 @@
+<style type="text/css">@import url("style.css");</style>
+
+
+    <img src="http://chart.apis.google.com/chart?chxt=x,y&amp;chd=s:frothsmzndyoteepngenfrothsmzndyoteepngen&amp;chs=200x100&amp;cht=lc&amp;chxl=0:|April|May|June|1:||50+Kb" />
+    <pre><div class="highlight"><pre><span class="kn">from</span> <span class="nn">GChartWrapper</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span><span class="s">&#39;frothsmzndyoteepngenfrothsmzndyoteepngen&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">&#39;simple&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mf">200</span><span class="p">,</span><span class="mf">100</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">axes</span><span class="p">(</span><span class="s">&#39;xy&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span> <span class="s">&#39;April&#39;</span><span class="p">,</span><span class="s">&#39;May&#39;</span><span class="p">,</span><span class="s">&#39;June&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="s">&#39;50+Kb&#39;</span><span class="p">)</span>
+</pre></div>
+</pre>

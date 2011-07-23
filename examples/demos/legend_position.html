@@ -1,0 +1,12 @@
+<style type="text/css">@import url("style.css");</style>
+
+
+    <img src="http://chart.apis.google.com/chart?chd=t:100.0,20.0,20.0,20.0,20.0,0.0,0.0&amp;chco=FF0000,00FF00,0000FF&amp;chs=300x150&amp;cht=v&amp;chdl=First|Second|Third&amp;chdlp=t" />
+    <pre><div class="highlight"><pre><span class="kn">from</span> <span class="nn">GChartWrapper</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="c">#http://chart.apis.google.com/chart?cht=v&amp;chs=200x100&amp;chd=t:100,20,20,20,20,0,0&amp;chdl=First|Second|Third&amp;chco=ff0000,00ff00,0000ff&amp;chdlp=t</span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">Venn</span><span class="p">([</span><span class="mf">100</span><span class="p">,</span><span class="mf">20</span><span class="p">,</span><span class="mf">20</span><span class="p">,</span><span class="mf">20</span><span class="p">,</span><span class="mf">20</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">])</span>
+<span class="n">G</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="s">&#39;First&#39;</span><span class="p">,</span><span class="s">&#39;Second&#39;</span><span class="p">,</span><span class="s">&#39;Third&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">legend_pos</span><span class="p">(</span><span class="s">&#39;t&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s">&#39;red&#39;</span><span class="p">,</span><span class="s">&#39;lime&#39;</span><span class="p">,</span><span class="s">&#39;blue&#39;</span><span class="p">)</span>
+</pre></div>
+</pre>

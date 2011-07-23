@@ -1,0 +1,13 @@
+<style type="text/css">@import url("style.css");</style>
+
+
+    <img src="http://chart.apis.google.com/chart?chd=e:foobarbaz&amp;chg=20.0,25.0,1.0,0.0&amp;chco=76a4fb&amp;chs=300x150&amp;cht=lc&amp;chls=3.0,6.0,3.0" />
+    <pre><div class="highlight"><pre><span class="kn">from</span> <span class="nn">GChartWrapper</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="c"># Create dashed line with grid x,y as floats</span>
+<span class="c"># then, just like line, the line and blank segments</span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span> <span class="p">[</span><span class="s">&#39;foobarbaz&#39;</span><span class="p">]</span> <span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s">&#39;76A4FB&#39;</span><span class="p">)</span>   
+<span class="n">G</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span><span class="mf">6</span><span class="p">,</span><span class="mf">3</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="mf">20.0</span><span class="p">,</span><span class="mf">25.0</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="mf">0</span><span class="p">)</span>
+</pre></div>
+</pre>

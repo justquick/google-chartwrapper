@@ -1,0 +1,8 @@
+.svn
+*.pyc
+build/
+dist/
+.DS_Store
+__pycache__
+.tox
+*.egg-info

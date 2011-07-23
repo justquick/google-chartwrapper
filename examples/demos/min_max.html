@@ -1,0 +1,16 @@
+<style type="text/css">@import url("style.css");</style>
+
+
+    <img src="http://chart.apis.google.com/chart?chxt=x&amp;chd=s:mHMza&amp;chco=008000&amp;chm=tMin,0000FF,0,1,10|fMax,FF0000,0,3,15&amp;chma=0,0,30,0&amp;chs=200x140&amp;cht=lc&amp;chxl=0:||t||F|&amp;chls=2.0,4.0,1.0" />
+    <pre><div class="highlight"><pre><span class="kn">from</span> <span class="nn">GChartWrapper</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span><span class="s">&#39;mHMza&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">&#39;simple&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s">&#39;008000&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="mf">2.0</span><span class="p">,</span><span class="mf">4.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mf">200</span><span class="p">,</span><span class="mf">140</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">axes</span><span class="p">(</span><span class="s">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span><span class="s">&#39;t&#39;</span><span class="p">,</span><span class="bp">None</span><span class="p">,</span><span class="s">&#39;F&#39;</span><span class="p">,</span><span class="bp">None</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">marker</span><span class="p">(</span><span class="s">&#39;tMin&#39;</span><span class="p">,</span><span class="s">&#39;blue&#39;</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="mf">10</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">marker</span><span class="p">(</span><span class="s">&#39;fMax&#39;</span><span class="p">,</span><span class="s">&#39;red&#39;</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">3</span><span class="p">,</span><span class="mf">15</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">margin</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">30</span><span class="p">,</span><span class="mf">0</span><span class="p">)</span>
+</pre></div>
+</pre>

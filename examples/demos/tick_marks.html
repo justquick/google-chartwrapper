@@ -1,0 +1,19 @@
+<style type="text/css">@import url("style.css");</style>
+
+
+    <img src="http://chart.apis.google.com/chart?chxt=x,y,r,x&amp;chd=s:cEAELFJHHHKUju9uuXUc&amp;chxp=2,10,35,95&amp;chxs=2,0000dd,13,-1,t,FF0000&amp;chxr=1,0,4&amp;chxtc=1,10|2,-180&amp;chco=76a4fb&amp;chs=220x125&amp;cht=lc&amp;chxl=2:|min|avg|max|3:|Jan|Feb|Mar&amp;chls=2.0" />
+    <pre><div class="highlight"><pre><span class="kn">from</span> <span class="nn">GChartWrapper</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span><span class="s">&#39;cEAELFJHHHKUju9uuXUc&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">&quot;simple&quot;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s">&#39;76A4FB&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mf">220</span><span class="p">,</span> <span class="mf">125</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="mf">2</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">axes</span><span class="p">(</span><span class="s">&#39;xyrx&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span> <span class="mf">0</span><span class="p">,</span><span class="mf">4</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span> <span class="s">&#39;min&#39;</span><span class="p">,</span><span class="s">&#39;avg&#39;</span><span class="p">,</span><span class="s">&#39;max&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span> <span class="s">&#39;Jan&#39;</span><span class="p">,</span><span class="s">&#39;Feb&#39;</span><span class="p">,</span><span class="s">&#39;Mar&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">style</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span> <span class="s">&#39;0000DD&#39;</span><span class="p">,</span><span class="mf">13</span><span class="p">,</span><span class="o">-</span><span class="mf">1</span><span class="p">,</span><span class="s">&#39;t&#39;</span><span class="p">,</span><span class="s">&#39;FF0000&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">position</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span><span class="mf">35</span><span class="p">,</span><span class="mf">95</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">tick</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="mf">10</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">tick</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="o">-</span><span class="mf">180</span><span class="p">)</span>
+</pre></div>
+</pre>

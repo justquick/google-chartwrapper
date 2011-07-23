@@ -1,0 +1,16 @@
+<style type="text/css">@import url("style.css");</style>
+
+
+    <img src="http://chart.apis.google.com/chart?choe=UTF-8&amp;chl=To+the+human+eye+QR+Codes+look+like+hieroglyphics,+%0A++++++++++++but+they+can+be+read+by+any+device+that+has+%0A++++++++++++the+appropriate+software+installed.&amp;chld=M|0&amp;chs=300x150&amp;cht=qr" />
+    <pre><div class="highlight"><pre><span class="kn">from</span> <span class="nn">GChartWrapper</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="c"># Output a QR code graph that allows 15% restore with 0 margin</span>
+<span class="c"># *Defaults to UTF-8 encoding </span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">QRCode</span><span class="p">(</span><span class="s">&#39;&#39;&#39;To the human eye QR Codes look like hieroglyphics, </span>
+<span class="s">    but they can be read by any device that has </span>
+<span class="s">    the appropriate software installed.&#39;&#39;&#39;</span><span class="p">)</span>
+<span class="c"># or use output_encoding method</span>
+<span class="n">G</span><span class="o">.</span><span class="n">output_encoding</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+<span class="c"># level_data(error_correction,margin_size)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">level_data</span><span class="p">(</span><span class="s">&#39;M&#39;</span><span class="p">,</span><span class="mf">0</span><span class="p">)</span>
+</pre></div>
+</pre>

@@ -1,0 +1,44 @@
+-- 1.0.0 --
+Bug Fixes
+Some backwards incompatable API and namespace changes including:
+	Module name moved from GChartWrapper to gchart
+	Charts are now found in gchart.charts
+	GChart class is renamed gchart.charts.BaseChart
+Added microlevel version number for future bugfix only releases
+Tox config to test Python versions 2.3-3.2
+Sphinx Documentation
+Nose Tests
+
+-- 0.9 --
+Switched to New BSD License
+
+
+-- 0.8 --
+Reverse functionality
+	>>> G = GChart.fromurl('http://chart.apis.google.com/chart?ch...')
+	<GChartWrapper.GChart instance at...>
+Chaining fixes
+Restuctured Axes functions
+Centralized and added unittests
+Enhanced unicode support
+Demos pages w/ source code
+
+-- 0.7 --
+Full py3k compliance
+Color name lookup from the css names: http://www.w3schools.com/css/css_colornames.asp
+	>>> G = Pie3D(range(1,5))
+	>>> G.color('green')
+New charts Note,Text,Pin,Bubble
+Updated Django templatetags to allow context inclusion and new charts
+Added some more templating examples
+
+-- 0.6 --
+The wrapper now supports chaining
+	The old way:
+	>>> G = Pie3D(range(1,5))
+	>>> G.label('A','B','C','D')
+	>>> G.color('00dd00')
+	>>> print G
+The new way with chaining
+	>>> print Pie3D(range(1,5)).label('A','B','C','D').color('00dd00')
+New chart PieC for concentric pie charts

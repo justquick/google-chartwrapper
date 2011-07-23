@@ -1,0 +1,18 @@
+<style type="text/css">@import url("style.css");</style>
+
+
+    <img src="http://chart.apis.google.com/chart?chxt=x,y,r,x&amp;chd=e:foobarbaz&amp;chxs=0,0000dd,14&amp;chco=76a4fb&amp;chs=300x150&amp;cht=lc&amp;chxl=0:|Foo|Bar|Baz|1:||20K|60K|100K|2:|A|B|C|3:||20|40|60|80" />
+    <pre><div class="highlight"><pre><span class="kn">from</span> <span class="nn">GChartWrapper</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="c"># Call type first with the chxt</span>
+<span class="c"># then call label and style in order, </span>
+<span class="c"># label can contain None(s)</span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span> <span class="p">[</span><span class="s">&#39;foobarbaz&#39;</span><span class="p">]</span> <span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s">&#39;76A4FB&#39;</span><span class="p">)</span> 
+<span class="n">G</span><span class="o">.</span><span class="n">axes</span><span class="p">(</span><span class="s">&#39;xyrx&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="s">&#39;Foo&#39;</span><span class="p">,</span> <span class="s">&#39;Bar&#39;</span><span class="p">,</span> <span class="s">&#39;Baz&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">style</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span> <span class="s">&#39;0000dd&#39;</span><span class="p">,</span> <span class="mf">14</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="s">&#39;20K&#39;</span><span class="p">,</span> <span class="s">&#39;60K&#39;</span><span class="p">,</span> <span class="s">&#39;100K&#39;</span><span class="p">)</span>  
+<span class="n">G</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span> <span class="s">&#39;A&#39;</span><span class="p">,</span> <span class="s">&#39;B&#39;</span><span class="p">,</span> <span class="s">&#39;C&#39;</span><span class="p">)</span>  
+<span class="n">G</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span><span class="s">&#39;20&#39;</span><span class="p">,</span><span class="s">&#39;40&#39;</span><span class="p">,</span><span class="s">&#39;60&#39;</span><span class="p">,</span><span class="s">&#39;80&#39;</span><span class="p">)</span>      
+</pre></div>
+</pre>

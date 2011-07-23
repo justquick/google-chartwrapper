@@ -1,0 +1,22 @@
+<style type="text/css">@import url("style.css");</style>
+
+
+    <img src="http://chart.apis.google.com/chart?chds=0,100&amp;chco=3072f3,FF0000,00aaaa&amp;chd=t:0.0,30.0,60.0,70.0,90.0,95.0,100.0|20.0,30.0,40.0,50.0,60.0,70.0,80.0|10.0,30.0,40.0,45.0,52.0|100.0,90.0,40.0,20.0,10.0|-1|5.0,33.0,50.0,55.0,7.0&amp;chm=s,FF0000,0,-1,5|s,0000FF,1,-1,5|s,00aa00,2,-1,5&amp;chs=300x150&amp;cht=lxy&amp;chls=2.0,4.0,1.0" />
+    <pre><div class="highlight"><pre><span class="kn">from</span> <span class="nn">GChartWrapper</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="c"># Draw multiple lines with markers on an lxy chart</span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">LineXY</span><span class="p">(</span> <span class="p">[</span> 
+    <span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="mf">30</span><span class="p">,</span><span class="mf">60</span><span class="p">,</span><span class="mf">70</span><span class="p">,</span><span class="mf">90</span><span class="p">,</span><span class="mf">95</span><span class="p">,</span><span class="mf">100</span><span class="p">],</span> <span class="c"># x values</span>
+    <span class="p">[</span><span class="mf">20</span><span class="p">,</span><span class="mf">30</span><span class="p">,</span><span class="mf">40</span><span class="p">,</span><span class="mf">50</span><span class="p">,</span><span class="mf">60</span><span class="p">,</span><span class="mf">70</span><span class="p">,</span><span class="mf">80</span><span class="p">],</span> <span class="c"># y values, etc.</span>
+    <span class="p">[</span><span class="mf">10</span><span class="p">,</span><span class="mf">30</span><span class="p">,</span><span class="mf">40</span><span class="p">,</span><span class="mf">45</span><span class="p">,</span><span class="mf">52</span><span class="p">],</span>
+    <span class="p">[</span><span class="mf">100</span><span class="p">,</span><span class="mf">90</span><span class="p">,</span><span class="mf">40</span><span class="p">,</span><span class="mf">20</span><span class="p">,</span><span class="mf">10</span><span class="p">],</span>
+    <span class="p">[</span><span class="s">&#39;-1&#39;</span><span class="p">],</span> <span class="c"># domain not found, interpolated</span>
+    <span class="p">[</span><span class="mf">5</span><span class="p">,</span><span class="mf">33</span><span class="p">,</span><span class="mf">50</span><span class="p">,</span><span class="mf">55</span><span class="p">,</span><span class="mf">7</span><span class="p">],</span>
+<span class="p">])</span>
+<span class="n">G</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="mf">100</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s">&#39;3072F3&#39;</span><span class="p">,</span><span class="s">&#39;red&#39;</span><span class="p">,</span><span class="s">&#39;00aaaa&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">marker</span><span class="p">(</span><span class="s">&#39;s&#39;</span><span class="p">,</span><span class="s">&#39;red&#39;</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="o">-</span><span class="mf">1</span><span class="p">,</span><span class="mf">5</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">marker</span><span class="p">(</span><span class="s">&#39;s&#39;</span><span class="p">,</span><span class="s">&#39;blue&#39;</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="o">-</span><span class="mf">1</span><span class="p">,</span><span class="mf">5</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">marker</span><span class="p">(</span><span class="s">&#39;s&#39;</span><span class="p">,</span><span class="s">&#39;00aa00&#39;</span><span class="p">,</span><span class="mf">2</span><span class="p">,</span><span class="o">-</span><span class="mf">1</span><span class="p">,</span><span class="mf">5</span><span class="p">)</span>   
+<span class="n">G</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="mf">4</span><span class="p">,</span><span class="mf">1</span><span class="p">)</span>   
+</pre></div>
+</pre>

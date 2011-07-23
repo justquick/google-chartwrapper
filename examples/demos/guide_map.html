@@ -1,0 +1,13 @@
+<style type="text/css">@import url("style.css");</style>
+
+
+    <img src="http://chart.apis.google.com/chart?chf=bg,s,eaf7fe&amp;chd=s:fSGBDQBQBBAGABCBDAKLCDGFCLBBEBBEPASDKJBDD9BHHEAACAC&amp;chco=f5f5f5,edf0d4,6c9642,365e24,13390a&amp;chtm=usa&amp;chld=NYPATNWVNVNJNHVAHIVTNMNCNDNELASDDCDEFLWAKSWIORKYMEOHIAIDCTWYUTINILAKTXCOMDMAALMOMNCAOKMIGAAZMTMSSCRIAR&amp;chs=440x220&amp;cht=t" />
+    <pre><div class="highlight"><pre><span class="kn">from</span> <span class="nn">GChartWrapper</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="c"># Make a map of the US as in the API guide</span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="s">&#39;fSGBDQBQBBAGABCBDAKLCDGFCLBBEBBEPASDKJBDD9BHHEAACAC&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">&#39;simple&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s">&#39;f5f5f5&#39;</span><span class="p">,</span><span class="s">&#39;edf0d4&#39;</span><span class="p">,</span><span class="s">&#39;6c9642&#39;</span><span class="p">,</span><span class="s">&#39;365e24&#39;</span><span class="p">,</span><span class="s">&#39;13390a&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="s">&#39;bg&#39;</span><span class="p">,</span><span class="s">&#39;s&#39;</span><span class="p">,</span><span class="s">&#39;eaf7fe&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mf">440</span><span class="p">,</span><span class="mf">220</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="s">&#39;usa&#39;</span><span class="p">,</span> <span class="s">&#39;NYPATNWVNVNJNHVAHIVTNMNCNDNELASDDCDEFLWAKSWIORKYMEOHIAIDCTWYUTINILAKTXCOMDMAALMOMNCAOKMIGAAZMTMSSCRIAR&#39;</span><span class="p">)</span>
+</pre></div>
+</pre>
