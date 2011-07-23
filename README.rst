@@ -18,12 +18,12 @@ Google Chart Wrapper
 
     pip install google-chartwrapper==1.0.0
     
-.. note:: For versions < 0.9, see `BaseChartWrapper @ Google Code <http://code.google.com/p/google-chartwrapper/>`_.
 
 Second generation Python wrapper for the `Google Chart Image API <http://code.google.com/apis/chart/image/>`_.
 Chart instances can render the URL of the actual Google chart and quickly insert into webpages on the fly or save images for later use.
 Made for dynamic Python websites (Django, Zope, CGI, etc.) that need on the fly, dynamic chart image generation. Works for Python versions 2.3 to 3.2.
 
+::
     from gchart import Pie
     Pie([5,10]).title('Hello Pie').color('red','lime').label('hello', 'world')
 
@@ -48,8 +48,10 @@ Construction
 ^^^^^^^^^^^^^^
 
 The chart takes any iterable python data type (now including numpy arrays)
-and does the encoding for you::
-    
+and does the encoding for you
+
+::python
+
     # Data sets 
     >>> dataset = (1, 2, 3)
     # Also 2 dimensional
