@@ -43,6 +43,7 @@ and does the encoding for you::
 
     Data sets 
     >>> dataset = (1, 2, 3)
+ 
     Also 2 dimensional
     >>> dataset = [[3,4], [5,6], [7,8]]
 
@@ -51,7 +52,7 @@ Initialize the chart with a valid type (see API reference) and dataset::
     3D Pie chart
     >>> from gchart import BaseChart
     >>> BaseChart('p3', dataset)
-    <BaseChart  p3 (1, 2, 3)>
+    ... <BaseChart  p3 (1, 2, 3)>
     
     Encoding (simple/text/extended)
     >>> chart = BaseChart('p3', dataset, encoding='text')
@@ -74,19 +75,19 @@ into different formats like::
 
     URL of the actual Google chart
     >>> chart.url
-    'http://chart.apis.google.com/chart?...'
+    ... 'http://chart.apis.google.com/chart?...'
     
     As an HTML <img> tag, keyword arguments will be added as tag attributes
     >>> chart.img(height=500,id="chart")
-    '<img alt="" title="" src="http://chart.apis.google.com/chart?..." id="chart" height="500" >'
+    ... '<img alt="" title="" src="http://chart.apis.google.com/chart?..." id="chart" height="500" >'
     
     Save chart to a file as PNG image, returns file name
     >>> chart.save('my-cool-chart')
-    'my-cool-chart.png'
+    ... 'my-cool-chart.png'
     
     Fetches the PngImageFile using the PIL module for image manipulation
     >>> chart.image()
-    <PngImagePlugin.PngImageFile instance at 0xb795ee4c>
+    ... <PngImagePlugin.PngImageFile instance at 0xb795ee4c>
     
     Now that you have the image instance, the world is your oyster
     Try saving image as JPEG,GIF,etc.
