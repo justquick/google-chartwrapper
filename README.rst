@@ -41,28 +41,28 @@ Construction
 The chart takes any iterable python data type (now including numpy arrays)
 and does the encoding for you::
 
-    # Data sets 
+    Data sets 
     >>> dataset = (1, 2, 3)
-    # Also 2 dimensional
+    Also 2 dimensional
     >>> dataset = [[3,4], [5,6], [7,8]]
 
 Initialize the chart with a valid type (see API reference) and dataset::
 
-    # 3D Pie chart
+    3D Pie chart
     >>> from gchart import BaseChart
     >>> BaseChart('p3', dataset)
     <BaseChart  p3 (1, 2, 3)>
     
-    # Encoding (simple/text/extended)
+    Encoding (simple/text/extended)
     >>> chart = BaseChart('p3', dataset, encoding='text')
     
-    # maxValue (for encoding values)
+    maxValue (for encoding values)
     >>> chart = BaseChart('p3', dataset, maxValue=100)
     
-    # Size
+    Size
     >>> chart = BaseChart('p3', dataset, size=(300,150))
     
-    # OR directly pass in API parameters
+    OR directly pass in API parameters
     >>> chart = BaseChart('p3', dataset, chtt='My Cool Chart', chl='A|B|C')
 
 
@@ -72,27 +72,27 @@ Rendering, Viewing and Saving
 The wrapper has many useful ways to take the URL of your chart and output it 
 into different formats like::
 
-    # URL of the actual Google chart
+    URL of the actual Google chart
     >>> chart.url
     'http://chart.apis.google.com/chart?...'
     
-    # As an HTML <img> tag, keyword arguments will be added as tag attributes
+    As an HTML <img> tag, keyword arguments will be added as tag attributes
     >>> chart.img(height=500,id="chart")
     '<img alt="" title="" src="http://chart.apis.google.com/chart?..." id="chart" height="500" >'
     
-    # Save chart to a file as PNG image, returns file name
+    Save chart to a file as PNG image, returns file name
     >>> chart.save('my-cool-chart')
     'my-cool-chart.png'
     
-    # Fetches the PngImageFile using the PIL module for image manipulation
+    Fetches the PngImageFile using the PIL module for image manipulation
     >>> chart.image()
     <PngImagePlugin.PngImageFile instance at 0xb795ee4c>
     
-    # Now that you have the image instance, the world is your oyster
-    # Try saving image as JPEG,GIF,etc.
+    Now that you have the image instance, the world is your oyster
+    Try saving image as JPEG,GIF,etc.
     >>> chart.image().save('my-cool-chart.jpg','JPEG')
     
-    # Show URL directly in your default web browser
+    Show URL directly in your default web browser
     >>> chart.show()
     
 Examples
