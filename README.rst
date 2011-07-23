@@ -3,15 +3,7 @@ Google Chart Wrapper
 
 
 :Authors:
-    Justin Quick <justquick@gmail.com>,
-    adunsmoor@gmail.com, 
-    arthur.ledard@gmail.com, 
-    BenBeecher@gmail.com, 
-    markessien@gmail.com, 
-    anedvedicky@gmail.com, 
-    muanis@gmail.com, 
-    mstamat@gmail.com, 
-    javacasm@gmail.com   
+    Justin Quick <justquick@gmail.com>, and many more in AUTHORS.txt  
 :Version: 1.0
 
 ::
