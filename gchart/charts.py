@@ -751,6 +751,8 @@ class HorizontalBarStack(_AbstractBaseChart):
     cht = 'bhs' 
 class VerticalBarStack(_AbstractBaseChart):
     cht = 'bvs' 
+class VerticalBarOver(_AbstractGChart):
+    cht = 'bvo' 
 class HorizontalBarGroup(_AbstractBaseChart):
     cht = 'bhg' 
 class VerticalBarGroup(_AbstractBaseChart):
@@ -773,5 +775,4 @@ class Map(_AbstractBaseChart):
     cht = 't' 
 class PieC(_AbstractBaseChart):
     cht = 'pc' 
-
 

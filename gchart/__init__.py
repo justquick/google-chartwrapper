@@ -3,7 +3,7 @@ from gchart.charts import *
 __all__ = ['Sparkline', 'Map', 'HorizontalBarStack', 'VerticalBarStack', 'QRCode',
 'Line', 'BaseChart', 'HorizontalBarGroup', 'Scatter', 'Pie3D', 'Pie', 'Meter',
 'Radar', 'RadarSpline', 'VerticalBarGroup', 'LineXY', 'Venn', 'PieC','Pin',
-'Text','Note','Bubble','charts','settings','encoding','tests']
+'Text','Note','Bubble','charts','settings','encoding','tests','VerticalBarOver']
 __version__ = '1.0'
 __author__ = 'Justin Quick <justquick@gmail.com>'
 
